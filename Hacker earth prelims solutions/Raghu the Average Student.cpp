@@ -16,7 +16,7 @@ int main() {
             cin>>a[i];
         }
         i=j=k=0;
-        for(j=0;j<n&&k<=m;++j)
+        for(j=0;j<n&&k<m;++j)
         {
             k+=a[j];
             if(k==m)
@@ -28,6 +28,7 @@ int main() {
         }
         for(i=0;i<n;++i)
         {
+            k-=a[i];
             while(k<m)
             {
                 k+=a[j];
