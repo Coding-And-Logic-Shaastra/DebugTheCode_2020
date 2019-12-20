@@ -21,8 +21,8 @@ int main() {
             k+=a[j];
             if(k==m)
             {
-                start=i;
-                end=j;
+                start=i+1;
+                end=j+1;
                 break; 
             }
         }
@@ -36,12 +36,12 @@ int main() {
             }
             if(k==m)
             {
-                start=i;
-                end=j;
+                start=i+1;
+                end=j+1;
                 break;
             }
         }
-        cout<<start+1<<" "<<end+1<<'\n'; 
+        cout<<start<<" "<<end<<'\n'; 
     }
     
     return 0;
